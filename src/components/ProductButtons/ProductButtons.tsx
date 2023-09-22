@@ -11,8 +11,6 @@ export const ProductButtons = ({ className = '', style }: Props) => {
 
     const { counter, increaseBy, maxCount } = useContext(ProductContext);
 
-    // const [maxReached, setMaxReached] = useState(false);
-
     const handleClick = ({ currentTarget }: React.MouseEvent<HTMLButtonElement>) => {
 
         if (currentTarget.name === 'more') {
@@ -24,14 +22,11 @@ export const ProductButtons = ({ className = '', style }: Props) => {
 
     }
 
-
     const maxReached = useCallback(
       () => !!maxCount && counter === maxCount,
       [counter, maxCount],
     )
     
-    // console.log(maxCount, counter);
-
     return (
         <div className={`${styles.buttonsContainer} ${className}`}>
 
@@ -49,7 +44,6 @@ export const ProductButtons = ({ className = '', style }: Props) => {
                 onClick={(e) => handleClick(e)}
                 style={style}
             >+</button>
-
 
         </div>
     )
