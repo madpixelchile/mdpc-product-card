@@ -10,8 +10,8 @@ const { Provider } = ProductContext;
 
 export interface Props {
     product: Product;
-    children?: (args: ProductCardHandlers)=> React.JSX.Element;
-    className: string | Object;
+    children: ( args: ProductCardHandlers ) => React.JSX.Element,
+    className?: string;
     style?: React.CSSProperties;
     onChangeProduct?: (args:OnChangeArgs)=> void;
     value?: number;
@@ -37,14 +37,14 @@ export const ProductCard = ({ children, product, className = '', style, onChange
                 style={style}
             >
                 {
-                    typeof children === 'function' ? children({
+                    children({
                         count: counter,
                         isMaxCountReached,
                         product,
                         maxCount,
                         increaseBy,
                         reset,
-                    }) : children
+                    }) 
                 }
             </div>
         </Provider>

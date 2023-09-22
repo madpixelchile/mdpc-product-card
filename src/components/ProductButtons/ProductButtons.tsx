@@ -36,7 +36,7 @@ export const ProductButtons = ({ className = '', style }: Props) => {
         <div className={`${styles.buttonsContainer} ${className}`}>
 
 
-            <button name={'more'} className={styles.buttonMinus} onClick={(e) => handleClick(e)} style={style}>-</button>
+            <button name={'more'} className={styles.buttonMinus} onClick={(e) => handleClick(e)} style={style} aria-label={'more'}>-</button>
 
             <div className={styles.countLabel}>
                 {counter}

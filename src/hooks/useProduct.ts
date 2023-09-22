@@ -15,7 +15,6 @@ export const useProduct = ( { onChangeProduct, product, value = 0, initialValues
     const isMounted = useRef(false);
 
     const increaseBy = (value: number) => {
-
         let newValue = Math.max( counter + value, 0 );
         if(initialValues?.maxCount){
             newValue = Math.min( newValue, initialValues?.maxCount );

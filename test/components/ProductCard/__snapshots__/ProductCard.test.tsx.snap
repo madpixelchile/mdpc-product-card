@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Product Card Component El componente debe de mostrar su children correctamente 1`] = `
+<div
+  className="productCard "
+>
+  <h1>
+    hola mundo
+  </h1>
+</div>
+`;
+
+exports[`Product Card Component El counter debería de incrementar el contador 1`] = `
+<div
+  className="productCard "
+>
+  <h1>
+    Product Card
+  </h1>
+  <span>
+    0
+  </span>
+  <button
+    onClick={[Function]}
+  >
+    Sumar en test
+  </button>
+</div>
+`;

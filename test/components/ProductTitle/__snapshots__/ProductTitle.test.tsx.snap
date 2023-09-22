@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Product Title Debe de mostrar el componente correctamente con el título personalizado. 1`] = `
+<span
+  className="productDescription "
+  style={
+    Object {
+      "color": "blue",
+    }
+  }
+>
+  Custom Product
+</span>
+`;
+
+exports[`Product Title El producto debe de mostrar una imagen 1`] = `
+<div
+  className="productCard "
+>
+  <span
+    className="productDescription "
+  >
+    Producto dos
+  </span>
+  <img
+    alt="./coffee-mug2.png"
+    className="productImg "
+    src="./coffee-mug2.png"
+  />
+</div>
+`;
+
+exports[`Product Title El producto no debe de mostrar la imagen cuando no está en el objeto 1`] = `
+<div
+  className="productCard "
+>
+  <span
+    className="productDescription "
+  >
+    Coffee Mug - Sin Imagen
+  </span>
+</div>
+`;
